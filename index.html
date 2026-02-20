@@ -10,7 +10,22 @@ font-family:monospace;
 text-align:center;
 margin-top:15%;
 }
-button {
+<button id="downloadBtn" onclick="location.href='log.txt'">
+Download Build
+</button>
+
+<script>
+setInterval(function() {
+  const btn = document.getElementById("downloadBtn");
+  const texts = [
+    "Download Build",
+    "Do Not Click",
+    "Instance Unstable",
+    "It Sees You"
+  ];
+  btn.innerText = texts[Math.floor(Math.random()*texts.length)];
+}, 4000);
+</script>
 background:black;
 color:#8b0000;
 border:1px solid #8b0000;
