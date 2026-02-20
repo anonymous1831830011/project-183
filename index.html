@@ -64,5 +64,14 @@ Download Build
 You are not in the original build.
   </p>
 
+  <script>
+const hour = new Date().getHours();
+if(hour >= 0 && hour <= 4){
+  document.body.innerHTML += "<p style='color:red;'>Why are you here this late?</p>";
+}
+  </script>
+
 </body>
 </html>
+
+<!-- access: /admin.html -->
