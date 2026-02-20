@@ -1,4 +1,35 @@
-ACCESS DENIED
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Access</title>
+<style>
+body {
+background:black;
+color:red;
+font-family:monospace;
+text-align:center;
+margin-top:20%;
+}
+</style>
+</head>
+<body>
 
-User not recognized.
-Build mismatch detected.
+<h1>ADMIN ACCESS</h1>
+<p id="msg">Enter Access Key</p>
+
+<input type="text" id="keyInput" placeholder="Access Key">
+<button onclick="checkKey()">Enter</button>
+
+<script>
+function checkKey() {
+  const key = document.getElementById("keyInput").value;
+  if(key === "14022020"){
+    document.getElementById("msg").innerText = "Access Granted. Entity 183 Active.";
+  } else {
+    document.getElementById("msg").innerText = "Access Denied.";
+  }
+}
+</script>
+
+</body>
+</html>
