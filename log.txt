@@ -1,0 +1,6 @@
+Project 183 Log
+
+14-02-2020
+World restoration failed.
+Entity 183 persists.
+This build was never meant to be public.
