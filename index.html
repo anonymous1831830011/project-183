@@ -22,7 +22,20 @@ cursor:pointer;
 <body>
 
 <h1>MINECRAFT 0.0.183_DEV</h1>
-<p>Internal Build - Status Unknown</p>
+<p id="status">Build Status: STABLE</p>
+
+<script>
+setInterval(function() {
+  const status = document.getElementById("status");
+  const states = [
+    "Build Status: STABLE",
+    "Build Status: CORRUPTED",
+    "Build Status: REBUILDING",
+    "Build Status: INSTANCE LOST"
+  ];
+  status.innerText = states[Math.floor(Math.random()*states.length)];
+}, 3000);
+</script>
 
 <button onclick="location.href='log.txt'">
 Download Build
